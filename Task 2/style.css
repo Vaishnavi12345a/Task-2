@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic,600italic,700,700italic,800);
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin: 0px;
+  padding: 0px;
+  background: url(https://wallpaperaccess.com/full/1088597.jpg)
+    center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header #title {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.10em;
+}
+
+header #logo {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header #description {
+  align-self: center;
+  text-align: center;
+  color: #FCD700;
+  letter-spacing: 0.10em;
+}
+
+.title-container {
+  background-color: #1c79d1;
+  border-radius: 10px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 85%;
+}
+
+.container {
+  width: 75%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 20px;
+  padding: 20px 50px 50px 50px;
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.85);
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+fieldset {
+  border: 2px solid #1c79d1;
+}
+
+#survey-form #personal{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+#survey-form #personal label {
+  padding: 10px;
+}
+
+#survey-form #best_player div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+}
+
+#survey-form #best_team div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+}
+
+#survey-form #matches div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+}
+
+.form-item-margin {
+  margin: 10px;
+}
+
+#survey-form #dropdown {
+  display: grid;
+  grid-template-rows: 25px 35px;
+}
+
+#survey-form #comment {
+  display: grid;
+  grid-template-rows: 25px 35px;
+  border: 1px solid #1c79d1;
+  font-size: 15px;
+  text-colour: gray;
+  width: 100%;
+  font-family: inherit;
+}
+
+
+#submit {
+  background-color: #1c79d1;
+  text-color: white;
+  padding: 10px;
+  font-size: 1.25em;
+  border: 0px;
+  color: white;
+  border-radius: 10px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #FCD700;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c79d1;
+  color: white;
+}

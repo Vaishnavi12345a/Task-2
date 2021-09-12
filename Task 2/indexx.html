@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="title-container">
+    <img src="images/download.png" id=logo alt="T20 WORLD CUP Logo">
+    <h1 id="title">T20 World Cup 2021 Survey</h1>
+    <hr>
+    <p id="description">What did you think of the T20 World Cup 2021?</p>
+  </div>
+</header>
+
+<div class="container">
+  <form id="survey-form">
+    <div class="form-item-margin" id="personal">
+      <label id="name-label" class="display-block" for="name"><span class="required">*</span>Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter your Name" autofocus required>
+      <label id="email-label" class="display-block" for="email"><span class="required">*</span>Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+      <label id="number-label" class="display-block" for="number"><span class="required">*</span>Age:</label>
+      <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your Age" required>
+    </div>
+  
+  <fieldset class="form-item-margin" id="best_player">
+    <legend>Who is your Player of the Year?</legend>
+    <div>
+      <label for="Virat Kohli"><input type="radio" id="vk" name="player" value="Virat Kohli">Virat Kohli</label>
+      <label for="MS Dhoni"><input type="radio" id="MS" name="player" value="MS Dhoni">MS Dhoni</label>
+      <label for="Kane Williamson"><input type="radio" id="KW" name="player" value="Kane Williamson">Kane Williamson</label>
+      <label for="Joe Root"><input type="radio" id="JR" name="player" value="Joe Root">Joe Root</label>
+      <label for="Rohit Sharma"><input type="radio" id="RS" name="player" value="Rohit Sharma">Rohit Sharma</label>
+      <label for="Steve Smith"><input type="radio" id="SS" name="player" value="Steve Smith">Steve Smith</label>
+      <label for="Mitchell Starc"><input type="radio" id="MST" name="player" value="Mitchell Starc">Mitchell Starc</label>
+      <label for="Ben Stokes"><input type="radio" id="BS" name="player" value="Ben Stokes">Ben Stokes</label>
+      <label for="K L Rahul"><input type="radio" id="KL" name="player" value="K L Rahul">K L Rahul</label>
+      <label for="Eoin Morgan"><input type="radio" id="EM" name="player" value="Eoin Morgan">Eoin Morgan</label>
+      <label for="Chris Gayle"><input type="radio" id="CG" name="player" value="Chris Gayle">Chris Gayle</label>
+    </div>
+    </fieldset>
+  
+  <fieldset class="form-item-margin" id="best_team">
+    <legend>Who is your Team of the Year?</legend>
+    <div>
+      <label for="India"><input type="radio" id="India" name="team" value="India">India</label>
+      <label for="New Zealand"><input type="radio" id="New-Zealand" name="team" value="New Zealand">New Zealand</label>
+      <label for="England"><input type="radio" id="England" name="team" value="England">England</label>
+      <label for="Australia"><input type="radio" id="Australia" name="team" value="Australia">Australia</label>
+      <label for="South Africa"><input type="radio" id="South-Africa" name="team" value="South Africa">South Africa</label>
+    </div>
+    </fieldset>
+    
+   <fieldset class="form-item-margin" id="matches">
+    <legend>Which format do you think is the best?</legend>
+    <div>
+     <label for="test"><input type="checkbox" id="test" name="test" value="1" checked>Test Matches</label>
+     <label for="one"><input type="checkbox" id="one" name="one" value="1" checked>One Day International</label>
+     <label for="t20"><input type="checkbox" id="t20" name="t20" value="1" checked>Twenty20 Internationals</label>
+     <label for="100"><input type="checkbox" id="100" name="100" value="1" checked>100-Ball Cricket</label>
+    </div>
+   </fieldset>
+    
+    <div class="form-item-margin" id="dropdown">
+      <label for="dropdown">Who will be the 2021 World Champion?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="England">England</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="India">India</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Australia">Australia</option>
+        <option value="Afganistan">Afganistan</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Pakistan">Pakistan</option>
+      </select>
+    </div>
+    
+  <div class="form-item-margin" id="textarea">
+    <label for="comment">Any thing else you want to tell us?</label>
+    <textarea name="comment" form="survey-form" id="comment" rows="10" placeholder="Predictions, suggestions and comments are also welcome..."></textarea>
+    </div>
+ 
+  <input type="submit" id="submit" value="Submit">
+    
+  </form>
+</div>
+
+<footer>
+  <p>Coded by <a target="_blank" href="https://github.com/Saharshbrnwl">Intern@Technophile</a></p>
+</footer>
+  
+</body>
+</html>
